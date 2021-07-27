@@ -2,7 +2,6 @@ package entity;
 
 import java.util.Collection;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Answer {
     private int code;
@@ -35,5 +34,9 @@ public class Answer {
 
     public void addProducts(Collection<Product> products) {
         this.products.addAll(products);
+    }
+
+    public boolean hasMessage() {
+        return message != null;
     }
 }

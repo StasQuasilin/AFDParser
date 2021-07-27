@@ -3,5 +3,5 @@ package parser;
 import entity.Answer;
 
 public interface IParser {
-    Answer parse(int limit);
+    void parse(Answer answer, int limit) throws Exception;
 }
